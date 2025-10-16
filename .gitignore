@@ -1,0 +1,64 @@
+# Node.js
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+.pnp
+.pnp.js
+.pnp.cjs
+.pnp.loader.mjs
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# Build output
+dist/
+build/
+out/
+coverage/
+.nyc_output/
+.next/
+.nuxt/
+.vercel/
+.serverless/
+.cache/
+.parcel-cache/
+
+# TypeScript
+*.tsbuildinfo
+
+# dotenv environment variables
+.env
+.env.*.local
+.env.local
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Misc
+*.tgz
+*.zip
+*.tar.gz
+.eslintcache
+.sass-cache

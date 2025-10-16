@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                        // Output JS modern (async/await, optional chaining oke)
+    "module": "CommonJS",                      // Node.js masih banyak pakai CJS
+    "moduleResolution": "Node",                // Resolusi import khas Node.js
+    "rootDir": "src",                          // Source TypeScript kamu
+    "outDir": "dist",                          // Output hasil compile JS
+    "strict": true,                            // Aktifin semua type-check penting
+    "esModuleInterop": true,                   // Biar bisa import modul CommonJS kayak `import express from "express"`
+    "forceConsistentCasingInFileNames": true,  // Hindari typo path beda huruf besar/kecil
+    "skipLibCheck": true,                      // Skip checking *.d.ts (biar cepat)
+    "resolveJsonModule": true,                 // Bisa import file JSON
+    "allowSyntheticDefaultImports": true,      // Biar `import x from "..."` tetap jalan meski modulnya pakai export default
+    "sourceMap": true,                         // Generate source map untuk debugging
+    "noImplicitAny": true,                     // Minta semua tipe eksplisit
+    "noUnusedLocals": true,                    // Warning kalau ada variable nggak dipakai
+    "noUnusedParameters": true,                // Sama tapi untuk parameter function
+    "noFallthroughCasesInSwitch": true         // Hindari case switch yang bocor
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", "**/*.test.ts"]
+}
